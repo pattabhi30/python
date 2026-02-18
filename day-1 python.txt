@@ -1,0 +1,130 @@
+print("hello world")
+
+
+#variables:-variables are container inside store some value
+a=10
+#string must be in doublequotes
+b="vinod" 
+print(a)
+print(b)
+
+#comments
+#this code is for adding two values
+"""this is mulit line comments
+   jvfdjkfdkjf
+   dfbjdgfkjsd"""
+
+
+#datatypes
+a=10 -> integer
+b="ramu"->string
+c=5.7->float
+d=5.98978->double
+e=true->Boolean
+
+
+
+
+#it print datatype of the variable 
+a=10
+b="ramu"
+c=5.7
+d=5.98978
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+
+
+
+
+#input():-it ask nthe user to give the input
+name=input("enter your name : ")
+print(name)
+
+
+
+
+#integer type of input
+name=input("enter your name : ")
+age=int(input("enter you age : "))
+print(name)
+print(age)
+
+
+#airthematic operators
+x=10
+y=20
+print(x+y)
+print(x-y)
+print(x*y)
+print(x/y)
+print(x//y)
+print(x**y)
+print(x%y)
+
+
+
+
+
+#print parameters
+print("apple","orange","cherry",sep="!")
+print("apple","orange","cherry",end="")
+
+
+
+
+
+
+
+
+#task
+#take two numbers as input print sum ,product and remainder
+a=int(input("enter a number :"))
+b=int(input("enter a number :"))
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+
+
+
+
+
+name1 = "Alice"
+age1 = 28
+city1 = "New York"
+
+name2 = "Bob"
+age2 = 34
+city2 = "London"
+
+name3 = "Charlie"
+age3 = 22
+city3 = "Sydney"
+
+name4 = "Diana"
+age4 = 30
+city4 = "Toronto"
+
+name5 = "Ethan"
+age5 = 27
+city5 = "Dubai"
+
+print(f"Name: {name1}, Age: {age1}, City: {city1}")
+print(f"Name: {name2}, Age: {age2}, City: {city2}")
+print(f"Name: {name3}, Age: {age3}, City: {city3}")
+print(f"Name: {name4}, Age: {age4}, City: {city4}")
+print(f"Name: {name5}, Age: {age5}, City: {city5}")
+
+
+#print your name on the same line five times using sep and end=""
+print("my name is Ramu" ,end="")
+print("my name is Ramu",end="")
+print("my name is Ramu",end="")
+print("my name is Ramu",end="")
+print("my name is Ramu",end="")
+
+
+
+print("Ramu","ramesh","vijaya","lalitha","pattabhi",sep="!")
