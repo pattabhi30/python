@@ -1,0 +1,186 @@
+#compersion operator
+x=10
+y=20
+print(x<y)
+print(x>y)
+
+
+
+x=10
+y=10
+print(x<y)
+print(x>y)
+
+x=10
+y=20
+print(x<y)
+print(x>y)
+print(x==y)
+print(x<=y)
+print(x>=y)
+print(x!=y)
+
+#and -> Both condition are satisfied it's true
+x=10
+y=20
+print(x>5 and y>20)
+
+
+#or -> one condition is satisfied it's true
+x=10
+y=20
+print(x>5 or y>20)
+
+#not -> oppsite
+x=10
+y=20
+print(not(x>y))
+
+
+#conditional staements
+#if statements
+age=int(input("enter your age"))
+if age>18:
+    print("major")
+
+#else statement
+age=int(input("enter your age"))
+if age>18:
+    print("major")
+else:
+    print("minor")
+
+#elif statement
+age=int(input("enter your age"))
+if age<18:
+    print("minor")
+elif age<60:
+    print("citizen")
+elif age<90:
+    print("very old")
+else:
+    print("senior citizen")
+
+#nested if statement
+marks=int(input("enter the marks"))
+if marks>=50:
+    if marks>=90:
+        print("excellent")
+    else:
+        print("passed but must imporve")
+else:
+    print("failed")
+
+#task
+#write a condition check a number is postive ,neagtive or zero
+num=int(input("Enter a number: "))
+if num>0:
+    print("Positive number")
+elif num<0:
+    print("Negative number")
+else:
+    print("Zero")
+
+#take two numbers print the larger one
+a=int(input("Enter first number: "))
+b=int(input("Enter second number: "))
+if a>b:
+    print("Larger number is:",a)
+elif b>a:
+    print("Larger number is:",b)
+else:
+    print("Both numbers are equal")
+
+
+
+ #take a year wheather it is leapyear or not
+year=int(input("Enter a year: "))
+if (year%4==0 and year%100!=0) or (year%400==0):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+
+
+#List:- listy is nothing but a array
+#list stores multiple elements add new elements,remove the elements,change the elements,remove the duplicate
+#there is no limits
+#list as a index
+a=[10,1,2,3,4,5,10]
+print(a)
+a[4]
+
+#indexing
+fruits=["apple","mango","banana"]
+print(fruits[1])
+print(fruits[0])
+
+#if you dont last index
+fruits=["apple","mango","banana"]
+print(fruits[-1])
+
+
+#change the element
+fruits=["apple","mango","banana"]
+fruits[1]="orange"
+fruits
+
+
+#list methods
+#append:- If we add a new element in list to use appendity add the new element at the end of the list
+fruits=["apple","mango","banana"]
+fruits.append("grapes")
+fruits
+
+
+#remove:- Remove the element from the list
+fruits=["apple","mango","banana"]
+fruits.remove("apple")
+fruits
+
+#size of list :-len():-It gives the size of the list
+fruits=["apple","mango","banana"]
+print(len(fruits))
+
+# If you want multiple elements we use column : mentioning the range
+numbers=[10,20,30,40,50]
+print(numbers[1:3])
+print(numbers[:3])
+print(numbers[2:])
+print(numbers[::-1])
+
+#task
+#create a list of five numbers print sum and average
+numbers=[10,20,30,40,50]
+total=sum(numbers)
+average=total/len(numbers)
+print("Numbers:", numbers)
+print("Sum =", total)
+print("Average =", average)
+
+
+#take the three subject marks form the user store it in a list and print total and average using list
+marks=[]
+marks.append(float(input("Enter marks of subject 1: ")))
+marks.append(float(input("Enter marks of subject 2: ")))
+marks.append(float(input("Enter marks of subject 3: ")))
+total = 0
+for m in marks:
+    total=total+m
+average=total/len(marks)
+print("Marks List:", marks)
+print("Total =", total)
+print("Average =", average)
+
+
+#write a program that takes age as input and print if age is lessthan 13 teen,if age is 13 and 19 adult,if age is between 29 an 59 otherwise senior
+age=int(input("Enter your age: "))
+if age<13:
+    print("Teen")
+elif 13<=age<=19:
+    print("Adult")
+elif 29<=age<= 59:
+    print("Middle Age")
+else:
+    print("Senior")
+
+
