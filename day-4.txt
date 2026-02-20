@@ -1,0 +1,185 @@
+#string function
+a="string"
+print(a[0])
+print(a[1])
+print(a[1:6])
+print(len(a))
+print(a[::-1])#slicing or reverse a string
+
+a="mam"
+b=a[::-1]
+if a==b:
+    print("Palindrome")
+else:
+    "Not"
+
+
+#string Conditions(joining the string)
+a="hello"
+b="pyhton"
+print(a+" "+b)
+print(a*3) #we can multiply with a string with the number
+#print(a+3) #we can't add a number with string
+
+
+
+#in and not in:-it gives output in boolean formate
+text="pyhton is fun"
+print("fun" in text)
+print("java" not in text)
+
+
+
+print(text.upper())#upper() it print the letter in the uppercase
+print(text.lower())#lower() it print the letter in the lowercase
+
+
+
+#title():- first letter in capital all the other thing in lowercase
+print(text.title())
+
+
+
+#strip():-remove the unwanted space at the begining and end
+print(text.strip())
+
+
+
+#replace()
+print(text.replace("s","g"))
+
+
+
+#split():-it gives list of words
+print(text.split())
+
+
+# take a vote you'll find a oval replace it with *
+a="pattabhi ramulu guptha"
+for ch in "aeiou":
+    a=a.replace(ch,"*")
+print(a)
+
+
+
+#task
+#take a sentence count how many vowels does it have
+sentence=input("Enter a sentence: ")
+count=0
+vowels="aeiouAEIOU"
+for ch in sentence:
+    if ch in vowels:
+        count+=1
+print("Number of vowels:",count)
+
+
+#reverse a string without using slicing
+text=input("Enter a string: ")
+reverse=""
+for ch in text:
+    reverse=ch+reverse
+print("Reversed string:",reverse)
+
+
+
+#Take a comma separate a string convert into a list
+input_string = "apple,banana,cherry"
+output_list = input_string.split(',')
+print(output_list)
+
+
+
+#LIST:-List is a collection of items enclosed in square brackets
+# List can store different types of data types
+# English is mutable her mutable means we can add or remove or change an element
+
+
+
+#insert()-> It asks two parameters one is which position and one is word
+fruits=["orange","grapes","banana"]
+fruits.insert(1,"apple")
+fruits
+
+
+#extend():-adding two list
+fruits.extend(["lemon","tomato"])
+fruits
+
+
+#pop():- It removed a specific index
+fruits.pop(2)
+fruits
+
+#clear():-Clear function is used for in a list there is no elements
+fruits.clear()
+fruits
+
+
+# Traverse a string there are two methods using index or using elements
+#using index
+fruits=["apple","grapes","banana"]
+for i in range(len(fruits)):
+    print(i,fruits[i])
+
+
+
+#using elements
+for ch in fruits:
+    print(ch)
+
+
+#sort():- Arrange the element in a proper order
+fruits.sort()
+fruits
+
+#reverse():-It reverse the elements in the list and Instead of using slicing we use reverse
+fruits.reverse()
+fruits
+
+
+#min():-It gives the smallest number in list
+#max():-It gives the largest number in a list
+#sum():Add all the elements in your list
+a=[10,20,50,40,70]
+print(min(a))
+print(m(a))
+print(sum(a))
+
+
+#nested list:-list in a list 
+l1=[1,2,3,4,5]
+l2=[[1,2],[3,4]]#nested list
+l2[0][1]# traversing In a 2D list it is nothing but a matrix
+
+
+#task
+#Create a list of five favorite movies and print second one
+movies=["orange","dj","khaildno150","mahanati","billa"]
+movies[1]
+
+# Add one movie using append and remove one movie using remove
+movies=["orange","dj","khaildno150","mahanati","billa"]
+movies.append("mana varashankara prasad")
+movies.remove("orange")
+movies
+
+#Sort a list of numbers in ascending order and descending order
+numbers=[45,12,78,3,25,90,1]
+numbers.sort()
+print("Ascending order:",numbers)
+numbers.sort(reverse=True)
+print("Descending order:",numbers)
+
+
+# Take a five integers from the user store them in a list and print their sum
+numbers=[]
+for i in range(5):
+    num=int(input(f"Enter number {i+1}: "))
+    numbers.append(num)
+total=sum(numbers)
+print("List:",numbers)
+print("Sum:",total)
+
+
+
+
